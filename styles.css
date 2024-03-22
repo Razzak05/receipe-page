@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --Nutmeg: hsl(14, 45%, 36%);
+    --Dark-Raspberry: hsl(332, 51%, 32%);
+    --White: hsl(0, 0%, 100%);
+    --Rose-White: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --Light-Grey: hsl(30, 18%, 87%);
+    --Wenge-Brown: hsl(30, 10%, 34%);
+    --Dark-Charcoal: hsl(24, 5%, 18%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+body{
+    background-color: var(--Eggshell);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    background-color: var(--White);
+    height: auto; /* Change height to auto */
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Add this line to center items horizontally */
+    padding: 30px;
+    margin: 100px;
+    border-radius: 15px;
+    text-align: justify;
+}
+
+img {
+    width: 100%; /* Ensure the image doesn't exceed the container width */
+    height: 250px; /* Allow the image to adjust its height proportionally */
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+p{
+    margin-bottom: 30px;
+}
+
+h1{
+    margin-bottom: 20px;
+}
+
+.prep-time{
+    background-color: var(--Rose-White);
+    width: 100%;
+    padding: 20px 20px 20px 25px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+}
+
+.prep-time h4{
+    margin-bottom: 10px;
+}
+
+.prep-time ul{
+    padding-left: 30px;
+
+}
+
+h3{
+    margin-bottom: 25px;
+}
+
+li{
+    margin: 0 0 10px 25px;
+}
+
+hr {
+    border: 1px solid var(--Eggshell); /* Use a custom color */
+    width: 100%; /* Ensure the horizontal rule spans the entire container width */
+    margin: 20px 0; /* Add some margin for spacing */
+}
+
+td{
+    padding-right: 130px;
+    padding-bottom: 10px; /* Add space between cell content and horizontal line */
+    position: relative;
+}
+
+td::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%; /* Make the horizontal line span the width of the cell */
+    height: 1px; /* Set the height of the horizontal line */
+    background-color: var(--Eggshell); /* Set the color of the horizontal line */
+}
